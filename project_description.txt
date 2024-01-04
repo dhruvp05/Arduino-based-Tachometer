@@ -1,0 +1,8 @@
+Title - Arduino based Tachometer
+
+I am making a DIY Tachometer which will measure RPM speed using the IR sensor. Before measurement, the shaft is covered by a black tape and then a white tape is put on it. Major part is covered by black tape. 
+For taking the measurement we would be holding the IR sensor near the rotating shaft such that IR rays falls on the black and white tape.  The logic used is that whenever IR rays from IR transmitter falls on 
+black part it will not reflect the rays and thus no rays will reach the IR receiver. Therefore the output of the IR sensor will remain HIGH for the black part. Whenever IR rays fall on white part the IR rays will be 
+reflected back to the IR receiver and output of the IR sensor will remain LOW for the white part. So in all we will get a square wave at the output of the IR sensor as the shaft rotates. 
+The RPM speed is measured as per the formula: RPM speed = (frequency of square wave at output) x 60. Give me a code to measure frequency of square wave at output if an Arduino Pro Micro is used as a microcontroller 
+and the IR sensor is connected at digital pin 2. This is the end of the description.
